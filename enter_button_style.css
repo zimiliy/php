@@ -1,0 +1,82 @@
+/* enterボタン*/
+.container {
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+  text-align: center;
+  margin-top: 0vh;
+  /*margin: 50px auto;
+	padding: 20px;*/
+
+}
+body{
+  //background-color: #cee39d;
+  //background-size: 7%;
+  background-image:url(images/gifucity_cut.png);
+  min-height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+header{height:20vh;}
+/* header_logo*/
+.page-header img{
+  margin-top:-10%;
+  width:40vw;
+min-width:350px;
+}
+/*説明文*/
+#welcome img{
+position:absolute;
+right:5vw;
+  width:40vw;
+padding-top:5vh;
+min-width:320px;}
+
+/*welcome button*/
+
+.btn-animation-02 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: #9ec34b;
+  border: 2px solid #9ec34b;
+  font-size: 25px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.btn-animation-02 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-animation-02::before,
+.btn-animation-02::after {
+  content: "";
+  display: block;
+  background-color: #f8f4eb;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+.btn-animation-02::before {
+  left: 0;
+}
+.btn-animation-02::after {
+  right: 0;
+}
+
+.btn-animation-02:hover:before,
+.btn-animation-02:hover:after {
+  width: 0;
+  background-color: #f8f4eb;
+}
+
+.btn-animation-02:hover {
+  color: #f8f4eb;
+}
